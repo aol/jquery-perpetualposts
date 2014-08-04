@@ -40,6 +40,7 @@
 					// Rig up sonar to update push state.
 					if (options.sonar) {
 						$content.on('scrollin', function () {
+							$(window).trigger('posts.urlChanged');
 							history.pushState({}, $anchor.text(), $anchor[0].href);
 						});
 					}
@@ -68,6 +69,7 @@
 				// https://github.com/artzstudio/jQuery-Sonar
 				if ($.sonar) {
 					$anchor.on('scrollin', function () {
+						$(window).trigger('posts.fetchingContent');
 						$anchor.off('scrollin');
 						$anchor.click();
 					});

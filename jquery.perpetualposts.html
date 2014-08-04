@@ -35,7 +35,7 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce rhoncus vitae justo eget fermentum. Nunc faucibus tellus in magna hendrerit euismod. Donec in porta felis, vitae auctor tortor. Morbi at leo eu neque sagittis gravida. Praesent elementum sed quam et tincidunt. Proin nisi orci, suscipit in tempus eu, consequat eget ante. Curabitur in magna pharetra, posuere lacus nec, mollis mauris. Etiam viverra mauris nec ipsum hendrerit feugiat. Vestibulum libero ligula, ornare eget tortor ac, ullamcorper pulvinar eros.</p>
 
-        <a class="perpetual-posts" href="http://localhost/jquery.perpetualposts/jquery.perpetualposts.html?1">Title of Next Article</a>
+        <a class="perpetual-posts" href="jquery.perpetualposts.html?1">Title of Next Article</a>
     </div>
     <script src="jquery-1.11.1.min.js"></script>
     <script src="jquery.sonar.min.js"></script>
@@ -48,6 +48,12 @@
             return $data.filter('.content');
         }
     });
+	$(window).on('posts.urlChanged', function() {
+		console.log("The url has now changed.");
+	});
+	$(window).on('posts.fetchingContent', function() {
+		console.log("The plugin is about to fetch additional content.");
+	});
     </script>
 </body>
 
