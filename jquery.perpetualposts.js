@@ -1,5 +1,13 @@
 /* jshint browser: true */
 /* global console: true, jQuery: true */
+
+/**
+## IMPORTANT ##
+Before implementing this on any AOL property, you **must** coordinate with Maria Winston (maria.winston@teamaol.com) from the Business Metrics & Analytics 
+team to ensure that your site's content is being tracked properly. 
+*/
+
+
 (function ($) {
 	'use strict';
 	$.fn.perpetualPosts = function (options) {
