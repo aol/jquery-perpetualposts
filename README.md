@@ -3,7 +3,7 @@
 This plugin makes it easy to load in content as users scroll to the end of the page.
 
 ## IMPORTANT
-Before implementing this on any AOL property, you **must** coordinate with [Maria Winston](mailto:maria.winston@teamaol.com&subject=Perpetual%20Posts) from the Business Metrics & Analytics team to ensure that your site's content is being tracked properly. 
+Before implementing this on any AOL property, you **must** coordinate with [Maria Winston](mailto:maria.winston@teamaol.com?subject=Perpetual%20Posts) from the Business Metrics & Analytics team to ensure that your site's content is being tracked properly. 
 
 
 ## Usage
