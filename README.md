@@ -19,3 +19,18 @@ jQuery('.perpetual-posts').perpetualPosts({
 	}
 });
 ```
+
+### Events
+The plugin broadcasts two events on the window. They are:
+####posts.urlChanged
+```
+$(window).on('posts.urlChanged', function() {
+	// the pages URL has changed and the new content has been loaded and displayed.
+});
+```
+####posts.fetchingContent
+```
+$(window).on('posts.fetchingContent', function() {
+	// new content is being requested. You can add a "loading" class to a placeholder here, for example
+});
+```
